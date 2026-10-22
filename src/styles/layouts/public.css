@@ -1,0 +1,80 @@
+.hero {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--hero-fondo);
+  border: 1px solid var(--border);
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-sm);
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin-inline: auto;
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+}
+
+.hero-tag {
+  margin-bottom: 0.6rem;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  max-width: 620px;
+  margin: 0 auto 1.5rem;
+  color: var(--text-muted);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-md);
+}
+
+.detail-media {
+  display: grid;
+  place-items: center;
+  min-height: 320px;
+  background: var(--card-media-fondo);
+  color: var(--primary);
+  font-family: var(--fuente-logo);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.detail-body {
+  padding: 2rem;
+}
+
+.detail-user {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 2.25rem 1.25rem;
+  }
+
+  .detail {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-body {
+    padding: 1.5rem;
+  }
+}

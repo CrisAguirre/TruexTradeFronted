@@ -1,10 +1,30 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Truex - Intercambia lo que ya no usas por lo que necesitas." />
-    <title>Truex | Trueques en línea</title>
+    <meta name="description" content="TrueX Trade - Intercambia lo que ya no usas por lo que necesitas." />
+    <meta name="theme-color" content="#E8860C" />
+    <link rel="icon" type="image/png" href="/src/assets/logos/logo-isotipo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>TrueX Trade | Trueques en línea</title>
+    <script>
+      (function () {
+        try {
+          var guardado = localStorage.getItem('truex-theme')
+          var tema = guardado === 'light' || guardado === 'dark' ? guardado : 'light'
+          document.documentElement.setAttribute('data-theme', tema)
+          document.documentElement.style.colorScheme = tema
+        } catch (error) {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

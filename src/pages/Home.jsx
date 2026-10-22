@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ArticleCard from '../components/ArticleCard'
+import ArticleCard from '../components/cards/ArticleCard'
 import { items } from '../data/items'
 
 function Home() {

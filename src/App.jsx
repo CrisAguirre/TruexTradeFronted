@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import MainLayout from './layouts/MainLayout'
+import PublicLayout from './layouts/PublicLayout'
 import Home from './pages/Home'
 import Explorar from './pages/Explorar'
 import ItemDetail from './pages/ItemDetail'
@@ -12,7 +12,7 @@ import NotFound from './pages/NotFound'
 function App() {
   return (
     <Routes>
-      <Route element={<MainLayout />}>
+      <Route element={<PublicLayout />}>
         <Route index element={<Home />} />
         <Route path="explorar" element={<Explorar />} />
         <Route path="producto/:id" element={<ItemDetail />} />

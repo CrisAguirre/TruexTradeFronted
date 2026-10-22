@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import ArticleCard from '../components/ArticleCard'
+import ArticleCard from '../components/cards/ArticleCard'
 import { items } from '../data/items'
 
 function Explorar() {

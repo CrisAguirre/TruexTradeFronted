@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radio-lg);
+  transition: transform var(--transicion), box-shadow var(--transicion),
+    border-color var(--transicion);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+  box-shadow: var(--sombra-md);
+}
+
+.card-media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 150px;
+  background: var(--card-media-fondo);
+  color: var(--primary);
+  font-family: var(--fuente-logo);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.4rem;
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card-body p {
+  flex: 1;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.card-body .btn {
+  align-self: flex-start;
+  margin-top: 0.4rem;
+}
