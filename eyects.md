@@ -1,4 +1,4 @@
-# Historial de la conversación — TrueX Trade Frontend
+# .Historial de la conversación — TrueX Trade Frontend
 
 > **Proyecto:** TrueX Trade (frontend de trueques en línea)
 > **Ruta del proyecto:** `C:\Users\David Garcia\Desktop\Truex\TruexTradeFronted`
